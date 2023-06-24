@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import static java.lang.System.exit;
-
 
 public class QuizApplication {
     public static void main(String[] args) {
@@ -9,7 +7,7 @@ public class QuizApplication {
         int totalQuestions = 5;
         int score = 0;
 
-        System.out.println("Welcome to the Present Simple Quiz!");
+        System.out.println("Welcome to the Present Continue Quiz!");
         System.out.println("Answer the following questions by entering the corresponding letter (a, b, c, d).");
         System.out.println("Enter 'q' at any time to quit the quiz.\n");
 
@@ -58,7 +56,6 @@ public class QuizApplication {
         double percentage = (double) score / totalQuestions * 100;
         System.out.println("Percentage: " + percentage + "%");
 
-        // Administrator's view of correct answers
         System.out.println("\nAdministrator View:");
         System.out.println("Enter the password to view the correct answers:");
         String password = scanner.nextLine();
